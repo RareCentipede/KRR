@@ -1,6 +1,6 @@
 ?- can_be_stored(X).
-X = hagelslag.
+X = item(hagelslag).
 
-?- should_be_discarded_in_bin(item(X)), at_location(X, Y).
-X = coke,
+?- should_be_discarded_in_bin(X), at_location(X, Y).
+X = item(coke),
 Y = (table).
