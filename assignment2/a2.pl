@@ -1,9 +1,9 @@
 item(coke).
 item(hagelslag).
-grabbed(robot, hagelslag).
+grabbed(robot, item(hagelslag)).
 at_location(coke, table).
 
-is_heavy(coke).
+is_heavy(item(hagelslag)).
 has_room(bin).
 has_room(shelf).
 
