@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl" uri="ontologies/DUL.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1679088399248" name="http://www.airlab.org/tiago/pick-and-place" uri="ontologies/practica4.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1679088399248" name="http://www.ease-crc.org/ont/SOMA.owl" uri="ontologies/SOMA-HOME.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1679088399248" name="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl" uri="ontologies/DUL.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1679088399248" name="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl" uri="ontologies/IOLite.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1679088399248" name="http://www.semanticweb.org/steven/ontologies/2023/2/assignment4_ZhengyangLu(5074428)" uri="assignment4_ZhengyangLU(5074428).owl"/>
+    </group>
+</catalog>

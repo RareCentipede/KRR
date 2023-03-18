@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/steven/ontologies/2023/2/assignment4_ZhengyangLu(5074428)"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/steven/ontologies/2023/2/assignment4_ZhengyangLu(5074428)">
+    <Prefix name="" IRI="http://www.semanticweb.org/steven/ontologies/2023/2/assignment4_ZhengyangLu(5074428)"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.ease-crc.org/ont/SOMA.owl</Import>
+    <Import>http://www.ontologydesignpatterns.org/ont/dul/DUL.owl</Import>
+    <Import>http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl</Import>
+    <Declaration>
+        <Class IRI="#Food"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Furniture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hagelslag"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Honey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Milk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Movable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonMovable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonRefrigerated_table"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Perishable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Refrigerated_table"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Robot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tiago"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yoghurt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gripper1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gripper_joint1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hagelslag1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#honey1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#joint_max_effort_value"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#milk1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#refrigerated_table1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#table1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tiago_robot1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#weight_value_hagelslag"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#weight_value_honey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#weight_value_milk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#weight_value_yoghurt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#yoghurt1"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.airlab.org/tiago/pick-and-place#NonPerishable"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.airlab.org/tiago/pick-and-place#NonPerishable"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ease-crc.org/ont/SOMA.owl#isOntopOf"/>
+            <Class IRI="http://www.ease-crc.org/ont/SOMA.owl#Table"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.airlab.org/tiago/pick-and-place#NonPerishable"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation"/>
+            <Class IRI="http://www.ease-crc.org/ont/SOMA.owl#Table"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ease-crc.org/ont/SOMA.owl#DesignedFurniture"/>
+        <Class IRI="#Furniture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ease-crc.org/ont/SOMA.owl#Dish"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ease-crc.org/ont/SOMA.owl#Gripper"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isComponentOf"/>
+            <Class IRI="#Tiago"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ease-crc.org/ont/SOMA.owl#Table"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf"/>
+            <Class IRI="#Food"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <Class IRI="#Movable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Furniture"/>
+        <Class IRI="#NonMovable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hagelslag"/>
+        <Class IRI="http://www.airlab.org/tiago/pick-and-place#NonPerishable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Honey"/>
+        <Class IRI="http://www.airlab.org/tiago/pick-and-place#NonPerishable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Milk"/>
+        <Class IRI="#Perishable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonRefrigerated_table"/>
+        <Class IRI="http://www.ease-crc.org/ont/SOMA.owl#Table"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perishable"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perishable"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.ease-crc.org/ont/SOMA.owl#isOntopOf"/>
+            <Class IRI="#Refrigerated_table"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refrigerated_table"/>
+        <Class IRI="http://www.ease-crc.org/ont/SOMA.owl#Table"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Robot"/>
+        <Class IRI="http://www.ease-crc.org/ont/SOMA.owl#ArtificialAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Robot"/>
+        <Class IRI="#Movable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tiago"/>
+        <Class IRI="#Robot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yoghurt"/>
+        <Class IRI="#Perishable"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.airlab.org/tiago/pick-and-place#NonPerishable"/>
+        <Class IRI="#Perishable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Food"/>
+        <Class IRI="#Furniture"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Movable"/>
+        <Class IRI="#NonMovable"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://www.ease-crc.org/ont/SOMA.owl#Gripper"/>
+        <NamedIndividual IRI="#gripper1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ease-crc.org/ont/SOMA.owl#MovableJoint"/>
+        <NamedIndividual IRI="#gripper_joint1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hagelslag"/>
+        <NamedIndividual IRI="#hagelslag1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Honey"/>
+        <NamedIndividual IRI="#honey1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ease-crc.org/ont/SOMA.owl#JointLimit"/>
+        <NamedIndividual IRI="#joint_max_effort_value"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Milk"/>
+        <NamedIndividual IRI="#milk1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Refrigerated_table"/>
+        <NamedIndividual IRI="#refrigerated_table1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NonRefrigerated_table"/>
+        <NamedIndividual IRI="#table1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tiago"/>
+        <NamedIndividual IRI="#tiago_robot1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ease-crc.org/ont/SOMA.owl#MassAttribute"/>
+        <NamedIndividual IRI="#weight_value_hagelslag"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ease-crc.org/ont/SOMA.owl#MassAttribute"/>
+        <NamedIndividual IRI="#weight_value_honey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ease-crc.org/ont/SOMA.owl#MassAttribute"/>
+        <NamedIndividual IRI="#weight_value_milk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ease-crc.org/ont/SOMA.owl#MassAttribute"/>
+        <NamedIndividual IRI="#weight_value_yoghurt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Yoghurt"/>
+        <NamedIndividual IRI="#yoghurt1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
+        <NamedIndividual IRI="#gripper1"/>
+        <NamedIndividual IRI="#gripper_joint1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ease-crc.org/ont/SOMA.owl#hasJointLimit"/>
+        <NamedIndividual IRI="#gripper_joint1"/>
+        <NamedIndividual IRI="#joint_max_effort_value"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ease-crc.org/ont/SOMA.owl#hasMassAttribute"/>
+        <NamedIndividual IRI="#hagelslag1"/>
+        <NamedIndividual IRI="#weight_value_hagelslag"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation"/>
+        <NamedIndividual IRI="#hagelslag1"/>
+        <NamedIndividual IRI="#table1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ease-crc.org/ont/SOMA.owl#hasMassAttribute"/>
+        <NamedIndividual IRI="#honey1"/>
+        <NamedIndividual IRI="#weight_value_honey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation"/>
+        <NamedIndividual IRI="#honey1"/>
+        <NamedIndividual IRI="#table1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ease-crc.org/ont/SOMA.owl#hasMassAttribute"/>
+        <NamedIndividual IRI="#milk1"/>
+        <NamedIndividual IRI="#weight_value_milk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation"/>
+        <NamedIndividual IRI="#milk1"/>
+        <NamedIndividual IRI="#refrigerated_table1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf"/>
+        <NamedIndividual IRI="#refrigerated_table1"/>
+        <NamedIndividual IRI="#milk1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf"/>
+        <NamedIndividual IRI="#refrigerated_table1"/>
+        <NamedIndividual IRI="#yoghurt1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf"/>
+        <NamedIndividual IRI="#table1"/>
+        <NamedIndividual IRI="#hagelslag1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isLocationOf"/>
+        <NamedIndividual IRI="#table1"/>
+        <NamedIndividual IRI="#honey1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent"/>
+        <NamedIndividual IRI="#tiago_robot1"/>
+        <NamedIndividual IRI="#gripper1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ease-crc.org/ont/SOMA.owl#hasMassAttribute"/>
+        <NamedIndividual IRI="#yoghurt1"/>
+        <NamedIndividual IRI="#weight_value_yoghurt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation"/>
+        <NamedIndividual IRI="#yoghurt1"/>
+        <NamedIndividual IRI="#refrigerated_table1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ease-crc.org/ont/SOMA.owl#hasJointEffortLimit"/>
+        <NamedIndividual IRI="#joint_max_effort_value"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ease-crc.org/ont/SOMA.owl#hasMassValue"/>
+        <NamedIndividual IRI="#weight_value_hagelslag"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ease-crc.org/ont/SOMA.owl#hasMassValue"/>
+        <NamedIndividual IRI="#weight_value_honey"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ease-crc.org/ont/SOMA.owl#hasMassValue"/>
+        <NamedIndividual IRI="#weight_value_milk"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.ease-crc.org/ont/SOMA.owl#hasMassValue"/>
+        <NamedIndividual IRI="#weight_value_yoghurt"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.1</Literal>
+    </DataPropertyAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
